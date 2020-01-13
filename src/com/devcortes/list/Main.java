@@ -16,15 +16,15 @@ public class Main {
         LinkedList.Node current = list.head;
 
 
-        LinkedList.Node reversed = simple(current, prev);
+        LinkedList.Node reversed = simpleReverse(current, prev);
         list.printList(reversed);
 
         prev = null;
         current = reversed;
-        list.printList(recur(current, prev));
+        list.printList(recursionReverse(current, prev));
     }
 
-    public static LinkedList.Node simple(LinkedList.Node current, LinkedList.Node prev) {
+    public static LinkedList.Node simpleReverse(LinkedList.Node current, LinkedList.Node prev) {
         LinkedList.Node next = null;
         while(current != null) {
             next = current.next;
@@ -35,7 +35,7 @@ public class Main {
         return prev;
     }
 
-    public static LinkedList.Node recur(LinkedList.Node current, LinkedList.Node prev) {
+    public static LinkedList.Node recursionReverse(LinkedList.Node current, LinkedList.Node prev) {
         if (current == null) {
             return prev;
         }
@@ -43,6 +43,6 @@ public class Main {
         current.next = prev;
         prev = current;
         current = next;
-        return recur(current, prev);
+        return recursionReverse(current, prev);
     }
 }
