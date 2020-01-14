@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a8bbefb-4ebd-4511-9701-7f699ceccc37" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/devcortes/binary/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/devcortes/binary_tree/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,12 +23,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="293" />
-    <option name="y" value="53" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
-  </component>
   <component name="ProjectId" id="1WLIVUgilIWUPKGdFlVRidW5hTu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -38,6 +31,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -157,6 +151,7 @@
       <updated>1564295766932</updated>
       <workItem from="1564295771911" duration="6953000" />
       <workItem from="1578922473218" duration="2345000" />
+      <workItem from="1579013858809" duration="66000" />
     </task>
     <servers />
   </component>
