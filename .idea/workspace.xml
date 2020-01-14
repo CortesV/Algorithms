@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a8bbefb-4ebd-4511-9701-7f699ceccc37" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/devcortes/binary_tree/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/devcortes/binary_tree/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devcortes/binary_tree/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +52,7 @@
       <recent name="com.devcortes.list" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.Main (2)">
     <configuration name="BinarySearchMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.devcortes.search.BinarySearchMain" />
       <module name="algorithms" />
@@ -78,12 +79,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FibonacciMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.devcortes.fibonacci.FibonacciMain" />
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.devcortes.binary.Main" />
       <module name="algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.devcortes.fibonacci.*" />
+          <option name="PATTERN" value="com.devcortes.binary.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,12 +92,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.devcortes.binary.Main" />
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.devcortes.binary_tree.Main" />
       <module name="algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.devcortes.binary.*" />
+          <option name="PATTERN" value="com.devcortes.binary_tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.BinarySearchMain" />
         <item itemvalue="Application.BubbleSortMain" />
-        <item itemvalue="Application.FibonacciMain" />
       </list>
     </recent_temporary>
   </component>
@@ -151,7 +152,7 @@
       <updated>1564295766932</updated>
       <workItem from="1564295771911" duration="6953000" />
       <workItem from="1578922473218" duration="2345000" />
-      <workItem from="1579013858809" duration="66000" />
+      <workItem from="1579013858809" duration="1466000" />
     </task>
     <servers />
   </component>
@@ -159,38 +160,65 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1807" height="343" key="GridCell.Tab.0.bottom" timestamp="1578926598138">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser" timestamp="1579014263039">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1579014263039" />
+    <state x="524" y="116" key="#xdebugger.evaluate" timestamp="1579015349637">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="524" y="116" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1579015349637" />
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1579015479713">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579015479713" />
     <state width="1807" height="343" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578926598138" />
-    <state width="1807" height="343" key="GridCell.Tab.0.center" timestamp="1578926598138">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1579015479713">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1579015479713" />
     <state width="1807" height="343" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578926598138" />
-    <state width="1807" height="343" key="GridCell.Tab.0.left" timestamp="1578926598138">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1579015479713">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1579015479713" />
     <state width="1807" height="343" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578926598138" />
-    <state width="1807" height="343" key="GridCell.Tab.0.right" timestamp="1578926598138">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1579015479713">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1579015479713" />
     <state width="1807" height="343" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578926598138" />
-    <state width="1807" height="343" key="GridCell.Tab.1.bottom" timestamp="1578926598290">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1493" height="223" key="GridCell.Tab.1.bottom" timestamp="1579015479860">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="223" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579015479860" />
     <state width="1807" height="343" key="GridCell.Tab.1.bottom/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578926598290" />
-    <state width="1807" height="343" key="GridCell.Tab.1.center" timestamp="1578926598290">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1493" height="223" key="GridCell.Tab.1.center" timestamp="1579015479860">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="223" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1579015479860" />
     <state width="1807" height="343" key="GridCell.Tab.1.center/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578926598290" />
-    <state width="1807" height="343" key="GridCell.Tab.1.left" timestamp="1578926598290">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1493" height="223" key="GridCell.Tab.1.left" timestamp="1579015479860">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="223" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1579015479860" />
     <state width="1807" height="343" key="GridCell.Tab.1.left/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578926598290" />
-    <state width="1807" height="343" key="GridCell.Tab.1.right" timestamp="1578926598290">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1493" height="223" key="GridCell.Tab.1.right" timestamp="1579015479860">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="223" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1579015479860" />
     <state width="1807" height="343" key="GridCell.Tab.1.right/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578926598290" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/devcortes/binary_tree/Main.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="masterDetails">
     <states>
