@@ -14,10 +14,7 @@ public class Main {
         bt.add(9);
         bt.add(8);
 
-        boolean b = bt.containsNode(123123);
-
-        bt.delete(9);
-
-        int a = 1;
+        bt.traverseLevelOrder();
+        System.out.println();
     }
 }

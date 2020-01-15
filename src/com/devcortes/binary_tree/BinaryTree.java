@@ -1,10 +1,13 @@
 package com.devcortes.binary_tree;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class BinaryTree {
 
     Node root;
 
-    private Node addRecursive(Node current, int value) {
+    public Node addRecursive(Node current, int value) {
         if (current == null) {
             return new Node(value);
         }
@@ -24,7 +27,7 @@ public class BinaryTree {
         root = addRecursive(root, value);
     }
 
-    private boolean containsNodeRecursive(Node current, int value) {
+    public boolean containsNodeRecursive(Node current, int value) {
         if (current == null) {
             return false;
         }
@@ -80,4 +83,56 @@ public class BinaryTree {
     private int findSmallestValue(Node root) {
         return root.left == null ? root.value : findSmallestValue(root.left);
     }
+
+    // The in-order traversal consists of first visiting the left sub-tree, then the root node, and finally the right sub-tree
+    public void traverseInOrder(Node node) {
+        if (node != null) {
+            traverseInOrder(node.left);
+            System.out.print(" " + node.value);
+            traverseInOrder(node.right);
+        }
+    }
+
+    // Pre-order traversal visits first the root node, then the left subtree, and finally the right subtree
+    public void traversePreOrder(Node node) {
+        if (node != null) {
+            System.out.print(" " + node.value);
+            traversePreOrder(node.left);
+            traversePreOrder(node.right);
+        }
+    }
+
+    // Post-order traversal visits the left subtree, the right subtree, and the root node at the end
+    public void traversePostOrder(Node node) {
+        if (node != null) {
+            traversePostOrder(node.left);
+            traversePostOrder(node.right);
+            System.out.print(" " + node.value);
+        }
+    }
+
+    public void traverseLevelOrder() {
+        if (root == null) {
+            return;
+        }
+
+        Queue<Node> nodes = new LinkedList<>();
+        nodes.add(root);
+
+        while (!nodes.isEmpty()) {
+
+            Node node = nodes.remove();
+
+            System.out.print(" " + node.value);
+
+            if (node.left != null) {
+                nodes.add(node.left);
+            }
+
+            if (node.right != null) {
+                nodes.add(node.right);
+            }
+        }
+    }
+
 }
