@@ -84,6 +84,7 @@ public class BinaryTree {
         return root.left == null ? root.value : findSmallestValue(root.left);
     }
 
+    /**   Обхід в глибину   **/
     // The in-order traversal consists of first visiting the left sub-tree, then the root node, and finally the right sub-tree
     public void traverseInOrder(Node node) {
         if (node != null) {
@@ -110,7 +111,9 @@ public class BinaryTree {
             System.out.print(" " + node.value);
         }
     }
+    /**   Обхід в глибину   **/
 
+    /**   Обхід в ширину   **/
     public void traverseLevelOrder() {
         if (root == null) {
             return;
@@ -134,5 +137,6 @@ public class BinaryTree {
             }
         }
     }
+    /**   Обхід в ширину   **/
 
 }
