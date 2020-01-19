@@ -4,12 +4,15 @@ package com.devcortes.modified_binary_tree;
 public class ModifiedNode {
 
     private int score;
+    private int currentPos;
+    private int size;
 
     private ModifiedNode left;
     private ModifiedNode right;
 
-    ModifiedNode(int value) {
+    ModifiedNode(int value, int size) {
         this.score = value;
+        this.size = size;
         right = null;
         left = null;
     }
@@ -36,5 +39,21 @@ public class ModifiedNode {
 
     public void setRight(ModifiedNode right) {
         this.right = right;
+    }
+
+    public int getCurrentPos() {
+        return currentPos;
+    }
+
+    public void setCurrentPos(int currentPos) {
+        this.currentPos = currentPos;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
     }
 }
