@@ -33,8 +33,7 @@ public class Main {
         binaryTree.addWithGreatestValueInRoot(2000);
         binaryTree.addWithGreatestValueInRoot(1203);
         binaryTree.sortDescTree();
-        binaryTree.find();
-        int a = 1;
+
     }
 }
 

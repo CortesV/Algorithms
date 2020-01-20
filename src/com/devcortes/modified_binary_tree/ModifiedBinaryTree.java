@@ -1,6 +1,8 @@
 package com.devcortes.modified_binary_tree;
 
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class ModifiedBinaryTree {
@@ -98,5 +100,40 @@ public class ModifiedBinaryTree {
         } else {
             return find(modifiedNode.getLeft(), integer, pos);
         }
+    }
+
+    public void nodesLessThan(int number) {
+        ArrayList<ModifiedNode> modifiedNodes = new ArrayList<>();
+        nodesLessThan(root, number, modifiedNodes);
+        for (ModifiedNode modifiedNode : modifiedNodes) {
+            System.out.println(modifiedNode.getScore());
+        }
+    }
+
+    private void nodesLessThan(ModifiedNode root, int number, ArrayList<ModifiedNode> modifiedNodes) {
+        if (root == null) {
+            return;
+        }
+
+        if (root.getScore() == number) {
+            copyElements(root.getLeft(), modifiedNodes);
+            return;
+        }
+
+        if (root.getScore() > number) {
+            nodesLessThan(root.getLeft(), number, modifiedNodes);
+        }
+        if (root.getScore() < number) {
+            copyElements(root.getLeft(), modifiedNodes);
+        }
+    }
+
+    private void copyElements(ModifiedNode modifiedNode, ArrayList<ModifiedNode> nodes) {
+        if (modifiedNode == null) {
+            return;
+        }
+        copyElements(modifiedNode.getLeft(), nodes);
+        nodes.add(modifiedNode);
+        copyElements(modifiedNode.getRight(), nodes);
     }
 }
