@@ -58,21 +58,21 @@ public class AVLTree {
 
         int balance = balance(current);
 
-        if (balance > 1 && /*current.left != null && */current.left.value > value) {
+        if (balance > 1 && current.left.value > value) {
             return rightRotate(current);
         }
 
-        if (balance < -1 && /*current.right != null && */current.right.value < value) {
+        if (balance < -1 && current.right.value < value) {
             return leftRotate(current);
         }
 
-        if (balance > 1 && /*current.left != null && */current.left.value < value) {
+        if (balance > 1 && current.left.value < value) {
             current.left = leftRotate(current.left);
             return rightRotate(current);
 
         }
 
-        if (balance < -1 && /*current.right != null && */current.right.value > value) {
+        if (balance < -1 && current.right.value > value) {
             current.right = rightRotate(current.right);
             return leftRotate(current);
         }
