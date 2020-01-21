@@ -113,7 +113,7 @@ public class AVLTreeSecond {
         }
 
         // Right Right Case
-        if (balance > -1 && value > root.getLeft().getValue()) {
+        if (balance < -1 && value > root.getRight().getValue()) {
             return leftRotate(root);
         }
 
@@ -360,6 +360,8 @@ public class AVLTreeSecond {
         while (true) {
             System.out.println("(1) Insert");
             System.out.println("(2) Delete");
+            System.out.println("(3) Print tree");
+            System.out.println("(4) Print default tree");
 
             try {
                 BufferedReader bufferRead = new BufferedReader(new InputStreamReader(System.in));
@@ -368,19 +370,25 @@ public class AVLTreeSecond {
                 if (Integer.parseInt(s) == 1) {
                     System.out.print("Value to be inserted: ");
                     t.add(Integer.parseInt(bufferRead.readLine()));
-                }
-                else if (Integer.parseInt(s) == 2) {
+                } else if (Integer.parseInt(s) == 2) {
                     System.out.print("Value to be deleted: ");
                     t.deleteNode(Integer.parseInt(bufferRead.readLine()));
-                }
-                else {
-                    System.out.println("Invalid choice, try again!");
+                } else if (Integer.parseInt(s) == 3) {
+                    t.print(t.getRoot());
+                } else if (Integer.parseInt(s) == 4) {
+                    t.add(10);
+                    t.add(20);
+                    t.add(30);
+                    t.add(40);
+                    t.add(50);
+                    t.add(25);
+                    t.add(39);
+                    t.print(t.getRoot());
+                } else {
+                    System.out.println("Incorrect choice");
                     continue;
                 }
-
-                t.print(t.getRoot());
-            }
-            catch(IOException e) {
+            } catch (IOException e) {
                 e.printStackTrace();
             }
         }
