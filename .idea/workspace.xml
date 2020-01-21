@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a8bbefb-4ebd-4511-9701-7f699ceccc37" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/devcortes/simple_tree/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/devcortes/simple_tree/SimpleTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/devcortes/avl_tree/AVLTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devcortes/avl_tree/AVLTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/devcortes/avl_tree/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devcortes/avl_tree/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,20 +57,7 @@
       <recent name="com.devcortes.avl_tree" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (3)">
-    <configuration name="BinarySearchMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.devcortes.search.BinarySearchMain" />
-      <module name="algorithms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devcortes.search.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Main (4)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.devcortes.binary.Main" />
       <module name="algorithms" />
@@ -103,6 +90,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.devcortes.simple_tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.devcortes.avl_tree.Main" />
+      <module name="algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devcortes.avl_tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -164,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (4)" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (2)" />
-        <item itemvalue="Application.BinarySearchMain" />
       </list>
     </recent_temporary>
   </component>
@@ -225,46 +225,50 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578926868334" />
-    <state width="1807" height="366" key="GridCell.Tab.0.bottom" timestamp="1579612459538">
+    <state width="1807" height="228" key="GridCell.Tab.0.bottom" timestamp="1579619767146">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1493" height="228" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579454645552" />
-    <state width="1807" height="366" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1579612459538" />
-    <state width="1807" height="366" key="GridCell.Tab.0.center" timestamp="1579612459538">
+    <state width="1807" height="228" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1579619767146" />
+    <state width="1807" height="228" key="GridCell.Tab.0.center" timestamp="1579619767146">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1493" height="228" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1579454645552" />
-    <state width="1807" height="366" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1579612459538" />
-    <state width="1807" height="366" key="GridCell.Tab.0.left" timestamp="1579612459538">
+    <state width="1807" height="228" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1579619767146" />
+    <state width="1807" height="228" key="GridCell.Tab.0.left" timestamp="1579619767146">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1493" height="228" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1579454645552" />
-    <state width="1807" height="366" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1579612459538" />
-    <state width="1807" height="366" key="GridCell.Tab.0.right" timestamp="1579612459538">
+    <state width="1807" height="228" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1579619767146" />
+    <state width="1807" height="228" key="GridCell.Tab.0.right" timestamp="1579619767146">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1493" height="228" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1579454645552" />
-    <state width="1807" height="366" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1579612459538" />
-    <state width="1807" height="366" key="GridCell.Tab.1.bottom" timestamp="1579612459917">
+    <state width="1807" height="228" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1579619767146" />
+    <state width="1807" height="291" key="GridCell.Tab.1.bottom" timestamp="1579619566243">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1493" height="228" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579454645553" />
-    <state width="1807" height="366" key="GridCell.Tab.1.bottom/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1579612459917" />
-    <state width="1807" height="366" key="GridCell.Tab.1.center" timestamp="1579612459916">
+    <state width="1807" height="291" key="GridCell.Tab.1.bottom/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1579619566243" />
+    <state width="1807" height="291" key="GridCell.Tab.1.center" timestamp="1579619566243">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1493" height="228" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1579454645553" />
-    <state width="1807" height="366" key="GridCell.Tab.1.center/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1579612459916" />
-    <state width="1807" height="366" key="GridCell.Tab.1.left" timestamp="1579612459916">
+    <state width="1807" height="291" key="GridCell.Tab.1.center/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1579619566243" />
+    <state width="1807" height="291" key="GridCell.Tab.1.left" timestamp="1579619566243">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1493" height="228" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1579454645553" />
-    <state width="1807" height="366" key="GridCell.Tab.1.left/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1579612459916" />
-    <state width="1807" height="366" key="GridCell.Tab.1.right" timestamp="1579612459917">
+    <state width="1807" height="291" key="GridCell.Tab.1.left/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1579619566243" />
+    <state width="1807" height="291" key="GridCell.Tab.1.right" timestamp="1579619566243">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1493" height="228" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1579454645553" />
-    <state width="1807" height="366" key="GridCell.Tab.1.right/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1579612459917" />
+    <state width="1807" height="291" key="GridCell.Tab.1.right/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1579619566243" />
+    <state x="476" y="130" width="1024" height="845" key="SettingsEditor" timestamp="1579613176982">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="476" y="130" width="1024" height="845" key="SettingsEditor/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1579613176982" />
     <state x="726" y="307" width="524" height="491" key="extract.method.dialog" timestamp="1579606537658">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -273,10 +277,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="657" y="253" key="run.anything.popup/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1579077583737" />
-    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1579530371736">
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1579619426126">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1579530371736" />
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1579619426126" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -298,84 +302,15 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/devcortes/avl_tree/Main.java</url>
-          <line>14</line>
+          <line>20</line>
           <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/devcortes/simple_tree/SimpleTree.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>11</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>algorithms</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

@@ -58,21 +58,21 @@ public class AVLTree {
 
         int balance = balance(current);
 
-        if (balance > 1 && current.left != null && current.left.value > value) {
-            rightRotate(current);
+        if (balance > 1 && /*current.left != null && */current.left.value > value) {
+            return rightRotate(current);
         }
 
-        if (balance > -1 && current.right != null && current.right.value < value) {
-            leftRotate(current);
+        if (balance < -1 && /*current.right != null && */current.right.value < value) {
+            return leftRotate(current);
         }
 
-        if (balance > 1 && current.left != null && current.left.value < value) {
+        if (balance > 1 && /*current.left != null && */current.left.value < value) {
             current.left = leftRotate(current.left);
             return rightRotate(current);
 
         }
 
-        if (balance > -1 && current.right != null && current.right.value > value) {
+        if (balance < -1 && /*current.right != null && */current.right.value > value) {
             current.right = rightRotate(current.right);
             return leftRotate(current);
         }
@@ -90,7 +90,7 @@ public class AVLTree {
         y.height = defineHeight(y);
         x.height = defineHeight(x);
 
-        return y;
+        return x;
     }
 
     private Node leftRotate(Node x) {
@@ -103,7 +103,7 @@ public class AVLTree {
         y.height = defineHeight(y);
         x.height = defineHeight(x);
 
-        return x;
+        return y;
     }
 
     public void preOrder(Node node) {
