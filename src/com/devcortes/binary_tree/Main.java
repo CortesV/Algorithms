@@ -1,5 +1,7 @@
 package com.devcortes.binary_tree;
 
+import java.util.List;
+
 // Resource - https://www.baeldung.com/java-binary-tree
 public class Main {
 
@@ -31,5 +33,16 @@ public class Main {
         System.out.println("Second case: node - " + bt.findNode(49) + ", result node - " + secondCase);
         BinaryTree.Node thirdCase = bt.findNextByOrderNode(bt.findNode(50));
         System.out.println("Third case: node - " + bt.findNode(50) + ", result node - " + thirdCase);
+
+        System.out.println("\n\n\nFirst case: node - " + bt.findNode(50));
+        List<BinaryTree.Node> page = bt.findPage(bt.findNode(50), 5);
+        for (BinaryTree.Node node : page) {
+            System.out.println(node);
+        }
+        System.out.println("\nSecond case: node - " + bt.findNode(49));
+        page = bt.findPage(bt.findNode(49), 5);
+        for (BinaryTree.Node node : page) {
+            System.out.println(node);
+        }
     }
 }

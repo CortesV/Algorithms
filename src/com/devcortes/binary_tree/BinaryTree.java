@@ -1,6 +1,8 @@
 package com.devcortes.binary_tree;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 
 public class BinaryTree {
@@ -217,5 +219,33 @@ public class BinaryTree {
 
     private Node minRightNode(Node node) {
         return node.left == null ? node : minRightNode(node.left);
+    }
+
+    public List<Node> findPage(Node node, int limit) {
+        if (node == null) {
+            return null;
+        }
+        List<Node> nodes = new ArrayList<>();
+        if (node.right == null) {
+            while (node.parent != null && node.parent.value < node.value) {
+                node = node.parent;
+            }
+            nodes.add(node.parent);
+            getPage(node.parent.right, nodes, limit);
+        } else {
+            getPage(node.right, nodes, limit);
+        }
+        return nodes;
+    }
+
+    private void getPage(Node node, List<Node> nodes, int limit) {
+        if (node != null) {
+            getPage(node.left, nodes, limit);
+            if (nodes.size() == limit) {
+                return;
+            }
+            nodes.add(node);
+            getPage(node.right, nodes, limit);
+        }
     }
 }
