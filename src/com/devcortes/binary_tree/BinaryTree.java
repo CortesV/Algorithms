@@ -200,6 +200,10 @@ public class BinaryTree {
             return null;
         }
 
+        if (node.parent == null && node.right == null) {
+            return node;
+        }
+
         if (node.right == null && node.value == node.parent.left.value) {
             return node.parent;
         } else if (node.right == null){
