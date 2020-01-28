@@ -5,7 +5,35 @@ import java.util.Queue;
 
 public class BinaryTree {
 
-    Node root;
+    private Node root;
+
+    class Node {
+        private int value;
+        private Node left;
+        private Node right;
+        private Node parent;
+
+        Node(int value) {
+            this.value = value;
+            right = null;
+            left = null;
+        }
+
+        @Override
+        public String toString() {
+            return "Node{" +
+                    "value=" + value +
+                    '}';
+        }
+    }
+
+    public Node getRoot() {
+        return root;
+    }
+
+    public void setRoot(Node root) {
+        this.root = root;
+    }
 
     private Node addRecursive(Node current, int value) {
         if (current == null) {
@@ -13,9 +41,13 @@ public class BinaryTree {
         }
 
         if (value < current.value) {
-            current.left = addRecursive(current.left, value);
+            Node leftChild = addRecursive(current.left, value);
+            current.left = leftChild;
+            leftChild.parent = current;
         } else if (value > current.value) {
-            current.right = addRecursive(current.right, value);
+            Node rightChild = addRecursive(current.right, value);
+            current.right = rightChild;
+            rightChild.parent = current;
         } else {
             return current;
         }
@@ -41,6 +73,22 @@ public class BinaryTree {
 
     public boolean containsNode(int value) {
         return containsNodeRecursive(root, value);
+    }
+
+    private Node findNode(Node current, int value) {
+        if (current == null) {
+            return null;
+        }
+        if (value == current.value) {
+            return current;
+        }
+        return value < current.value
+                ? findNode(current.left, value)
+                : findNode(current.right, value);
+    }
+
+    public Node findNode(int value) {
+        return findNode(root, value);
     }
 
     public void delete(int value) {
@@ -139,4 +187,31 @@ public class BinaryTree {
     }
     /**   Обхід в ширину   **/
 
+    public void print(Node node) {
+        if (node != null) {
+            print(node.left);
+            System.out.print(node.value + " ");
+            print(node.right);
+        }
+    }
+
+    public Node findNextByOrderNode(Node node) {
+        if (node == null) {
+            return null;
+        }
+
+        if (node.right == null && node.value == node.parent.left.value) {
+            return node.parent;
+        } else if (node.right == null){
+            while (node.parent != null && node.parent.value < node.value) {
+                node = node.parent;
+            }
+            return node.parent;
+        }
+        return minRightNode(node.right);
+    }
+
+    private Node minRightNode(Node node) {
+        return node.left == null ? node : minRightNode(node.left);
+    }
 }

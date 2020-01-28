@@ -6,21 +6,30 @@ public class Main {
     public static void main(String[] args) {
         BinaryTree bt = new BinaryTree();
 
-        bt.add(6);
-        bt.add(4);
+        bt.add(50);
+        bt.add(70);
+        bt.add(55);
+        bt.add(80);
+        bt.add(51);
+        bt.add(60);
+        bt.add(71);
+        bt.add(90);
+        bt.add(73);
+        bt.add(40);
+        bt.add(45);
+        bt.add(49);
+        bt.add(41);
+        bt.add(20);
+        bt.add(30);
         bt.add(10);
-        bt.add(3);
-        bt.add(5);
-        bt.add(7);
-        bt.add(9);
-        bt.add(8);
-        bt.add(12);
 
-        boolean i = bt.containsNode(8);
-        boolean qw = bt.containsNode(10);
-        bt.delete(6);
-        i = bt.containsNode(8);
-        qw = bt.containsNode(10);
+        bt.print(bt.getRoot());
         System.out.println();
+        BinaryTree.Node firstCase = bt.findNextByOrderNode(bt.findNode(10));
+        System.out.println("First case: node - " + bt.findNode(10) + ", result node - " + firstCase);
+        BinaryTree.Node secondCase = bt.findNextByOrderNode(bt.findNode(49));
+        System.out.println("Second case: node - " + bt.findNode(49) + ", result node - " + secondCase);
+        BinaryTree.Node thirdCase = bt.findNextByOrderNode(bt.findNode(50));
+        System.out.println("Third case: node - " + bt.findNode(50) + ", result node - " + thirdCase);
     }
 }
