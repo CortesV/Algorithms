@@ -2,7 +2,6 @@ package com.devcortes.binary_tree;
 
 import java.util.List;
 
-// Resource - https://www.baeldung.com/java-binary-tree
 public class Main {
 
     public static void main(String[] args) {
@@ -26,6 +25,9 @@ public class Main {
         bt.add(10);
 
         bt.print(bt.getRoot());
+        System.out.println();
+        System.out.println("IS TREE BST? ANSWER - " + bt.isBST(bt.getRoot()));
+        System.out.println("IS TREE BST? SECOND ANSWER - " + bt.isBSTSecond(bt.getRoot()));
         System.out.println();
         BinaryTree.Node firstCase = bt.findNextByOrderNode(bt.findNode(10));
         System.out.println("First case: node - " + bt.findNode(10) + ", result node - " + firstCase);

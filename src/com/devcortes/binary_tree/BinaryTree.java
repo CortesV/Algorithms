@@ -3,6 +3,7 @@ package com.devcortes.binary_tree;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Queue;
 
 public class BinaryTree {
@@ -247,5 +248,42 @@ public class BinaryTree {
             nodes.add(node);
             getPage(node.right, nodes, limit);
         }
+    }
+
+    public boolean isBST(Node node) {
+        return isBSTUtil(node, Integer.MIN_VALUE, Integer.MAX_VALUE);
+    }
+
+    private boolean isBSTUtil(Node node, int minValue, int maxValue) {
+        if (Objects.isNull(node)) {
+            return true;
+        }
+
+        if (node.value < minValue || node.value > maxValue) {
+            return false;
+        }
+
+        return isBSTUtil(node.left, minValue, node.value )
+                && isBSTUtil(node.right, node.value , maxValue);
+    }
+
+    public boolean isBSTSecond(Node node) {
+        if (Objects.isNull(node)) {
+            return true;
+        }
+
+        if ((Objects.nonNull(node.left) && getMaxValue(node.left) > node.value) || (Objects.nonNull(node.right) && getMinValue(node.right) < node.value)) {
+            return false;
+        }
+
+        return isBSTSecond(node.left) && isBSTSecond(node.right);
+    }
+
+    private int getMaxValue(Node node) {
+        return Objects.isNull(node.right) ? node.value : getMaxValue(node.right);
+    }
+
+    private int getMinValue(Node node) {
+        return Objects.isNull(node.left) ? node.value : getMinValue(node.left);
     }
 }
